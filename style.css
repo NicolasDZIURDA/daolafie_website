@@ -37,6 +37,7 @@ body .menu {
   border-bottom: solid 2px;
   border-color: black;
 }
+
 body .menuButton {
   background-color: black;
   border: none;
@@ -46,5 +47,3 @@ body .menuButton {
   margin: 4px 2px;
   cursor: pointer;
 }
-
-/*# sourceMappingURL=style.css.map */
