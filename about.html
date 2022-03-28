@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Daolafie</title>
+        <meta charset="utf-8">
+    </head>
+
+    <div class="header">
+        <img src="images/logo.png" alt="logo">
+        <h1>DAOLAFIE</h1>
+    </div>
+    <body>
+        <div class="menu">
+            <button class="menuButton">
+                <a href="home.html">Accueil</a>
+            </button>
+            <button class="menuButton">
+                <a href="about.html">Qui sommes-nous ?</a>
+            </button>
+            <button class="menuButton">Nos offres</button>
+            <button class="menuButton">À propos</button>
+        </div>
+        <div>
+            <h1 class="aboutTitle">L'équipe Daolafie</h1>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1avZy0L-PL1zSVi1M4B-Dn9f4ds8M_pGg" width="640" height="480"></iframe>
+            <p>
+                Daolafie définit un ensemble de collaborateurs travaillant en restauration rapide pour le groupe Pizza Hut.
+                Fondée en 2005, le groupe débutera alors son activité en région Île-de-France, notamment dans la grande couronne.
+                Par la suite, de nouveaux établissements ont vu le jour dans la petite couronne, mais également en province.
+                L'objectif de Daolafie est basé sur la gestion de multiples centres d'activité, et de faire évoluer la marque
+                à petite comme à grande échelle.
+            </p>
+        </div>
+        <div class="page">
+            <h1 class="title">Nos points de vente</h1>
+            <div class="storeList">
+                <div id="store"></div>
+                <script>
+                    var stores = ["Pizza Hut - Melun", 
+                                  "Pizza Hut - Évry", 
+                                  "Pizza Hut - Savigny", 
+                                  "Pizza Hut - Montgeron", 
+                                  "Pizza Hut - Montigny", 
+                                  "Pizza Hut - Meudon", 
+                                  "Pizza Hut - Viroflay", 
+                                  "Pizza Hut - Chesnay", 
+                                  "Pizza Hut - Sèvres", 
+                                  "Pizza Hut - Orléans", 
+                                  "Pizza Hut - Mulhouse", 
+                                  "Pizza Hut - Nancy 1", 
+                                  "Pizza Hut - Nancy 2"];
+                    var display ="", i;
+                    for (i = 0; i < stores.length; i++) {
+                        display = display + "<div class='entity'>" +
+                                                "<h1>" + stores[i] + "</h1>" +
+                                                "<input type='button' onclick='myFunction(" + i + ")' value='Voir plus'/>" +
+                                                "<div class='description' id='description" + i + "'>" +
+                                                    "<p>" + stores[i] + " est le meilleur Pizza Hut</p>" +
+                                                "</div>" +
+                                            "</div>";
+                        document.getElementById("store").innerHTML = display;
+                    }
+
+                    function myFunction(i) {
+                        console.log(i);
+                        var x = document.getElementById("description" + i);
+                        if (x.style.display === "block") {
+                            x.style.display = "none";
+                        } else {
+                            x.style.display = "block";
+                        }
+                    }
+                </script>
+            </div>
+            
+        </div>
+    </body>
+    <footer>
+      
+    </footer>
+</html>
