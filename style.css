@@ -1,15 +1,15 @@
-.html {
-    color: red;
+html {
+    background-color: rgb(240, 240, 240);
 }
 
-.header {
+header {
     display: flex;
     align-items: center;
     text-align: right;
     background-color: black;
 }
 
-.header h1 {
+header h1 {
     padding-left: 30%;
     margin-right: 100%;
     font-family: Arial;
@@ -42,13 +42,19 @@ body .menu {
 }
 
 body .menuButton {
-    background-color: black;
+    background-color: rgb(128, 128, 128);
+    width: 20%;
     border: none;
     color: white;
-    padding: 15px 32px;
-    font-size: 16px;
-    margin: 4px 2px;
+    margin: 1%;
+    padding: 1%;
+    font-size: 28px;
     cursor: pointer;
+}
+
+footer {
+    margin-top: 2%;
+    border-top: solid red;
 }
 
 /* Slideshow container */
@@ -56,6 +62,12 @@ body .menuButton {
     max-width: 1000px;
     position: relative;
     margin: auto;
+}
+
+.slideshow-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Hide the images by default */
@@ -129,7 +141,7 @@ body .menuButton {
 /* Fading animation */
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 4s;
 }
 
 @keyframes fade {
