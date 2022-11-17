@@ -55,6 +55,28 @@ body .menuButton {
 footer {
     margin-top: 2%;
     border-top: solid red;
+    text-align: center;
+}
+
+.facebook {
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.instagram {
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+footer h1 {
+    margin-left: 20%;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 /* Slideshow container */
@@ -68,11 +90,6 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
 }
 
 /* Next & previous buttons */
